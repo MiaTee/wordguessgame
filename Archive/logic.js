@@ -28,3 +28,15 @@ function isCorrectGuess (word, letter)
 isCorrectGuess();
 
 
+//function to create a blank array "_" equals to the length of the word
+function getBlanks(word)
+{
+    var blankArray = [];
+    for (var i = 0; i < word.length ; i++)
+    {
+        blankArray.push("_")
+    }
+    return blankArray;
+}
+
+getBlanks();
