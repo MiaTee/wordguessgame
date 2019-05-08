@@ -66,32 +66,34 @@ fillBlanks();
 //1)- Function to setup the round that will take one argument the picked word and returns guesses left, wrong guesses and puzzle array
  function setupRound(word)
  {
-//     // word; pass word to the function
-//     //guessesLeft: set guesses left to 9
-//     //count wrong guess an array that will store wrong guess , start value is empty
-// //     //puzzleState is an array with underscore values at the start
-//      var wrongGuesses = [];
-// //     var puzzleState = getBlank();
-//      var guessesLeft = 9;
-// //     var word = randomWord();
-//     var puzzleState = puzzleArray;
-    
-    // var obj = {
-    //     word: word,
-    //     guessesLeft: guessesLeft,
-    //     wrongGuesses: wrongGuesses,
-    //     puzzleState = puzzleState
-    // };
-    var gameObj = {
+    var roundObj = {
         guessesLeft: 9,
         word: word,
         wrongGuesses:[],
         puzzleState:[]
-    
-
 
     };
 
-  return gameObj;
+  return roundObj;
  }
  setupRound();
+
+
+ //2)-Function to update round 
+
+ function updateRound(roundObj, letter)
+ { 
+    if (isCorrectGuess(roundObj.word, letter))
+    {
+      roundObj.puzzleState =  fillBlanks(roundObj.word, roundObj.puzzleState, letter);
+      
+    }
+    else{
+        roundObj.guessesLeft = roundObj.guessesLeft - 1;
+        roundObj.wrongGuesses = letter;
+    }  
+    
+ }
+updateRound();
+
+
