@@ -40,3 +40,21 @@ function getBlanks(word)
 }
 
 getBlanks();
+
+//function to fill blanks takes three args the word , array of current puzzle state and letter that is going to be filled
+function fillBlanks(word, puzzleArray, letter)
+{
+for(var i = 0 ; i < word.length; i++)
+{
+    if (word.charAt(i) == letter)
+    {
+        puzzleArray[i] = letter;
+    }
+ 
+}
+    return puzzleArray;
+ 
+}
+fillBlanks();
+
+
