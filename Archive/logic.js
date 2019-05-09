@@ -125,14 +125,24 @@ function isEndOfRound(roundObj)
        return true;
    }
    return false;
-//    else if (hasWon(roundObj.puzzleState) && roundObj.guessesLeft !== 0) {
-//        return false;
-
-   
-
-
 
 }
+
+//6) - Function to setup Game
+ function setupGame (wordsArray, numberOfWins, numberOfLoses)
+ {
+    gameObj = {
+        words: wordsArray,
+        wins: numberOfWins,
+        losses: numberOfLoses,
+        round: setupRound(randomWord(wordsArray))
+    };
+ 
+     return gameObj;
+
+
+
+ }
 
 
 
