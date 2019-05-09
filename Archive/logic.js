@@ -17,7 +17,7 @@ function randomWord(gameWords)
 
 }
 
-randomWord();
+
 
 
 
@@ -29,7 +29,6 @@ function isCorrectGuess (word, letter)
     }
    
 
-isCorrectGuess();
 
 
 //function to create a blank array "_" equals to the length of the word
@@ -43,7 +42,6 @@ function getBlanks(word)
     return blankArray;
 }
 
-getBlanks();
 
 //function to fill blanks takes three args the word , array of current puzzle state and letter that is going to be filled
 function fillBlanks(word, puzzleArray, letter)
@@ -59,7 +57,7 @@ for(var i = 0 ; i < word.length; i++)
     return puzzleArray;
  
 }
-fillBlanks();
+
 
 //Game Logic Functions
 
@@ -70,13 +68,13 @@ fillBlanks();
         guessesLeft: 9,
         word: word,
         wrongGuesses:[],
-        puzzleState:[]
+        puzzleState: getBlanks(word)
 
-    };
+    }
 
   return roundObj;
  }
- setupRound();
+
 
 
  //2)-Function to update round 
@@ -94,6 +92,21 @@ fillBlanks();
     }  
     
  }
-updateRound();
+
+
+//3) - Function to that checks if player won or not
+function hasWon(array)
+{
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] === '_') {
+            return false;
+         } 
+        }
+        return true;
+
+
+    
+}
+
 
 
