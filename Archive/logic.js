@@ -94,7 +94,7 @@ for(var i = 0 ; i < word.length; i++)
  }
 
 
-//3) - Function to that checks if player won or not
+//3) - Function to check if player won the game
 function hasWon(array)
 {
     for (var i = 0; i < array.length; i++) {
@@ -103,10 +103,21 @@ function hasWon(array)
          } 
         }
         return true;
-
-
     
 }
+
+//4)- Function to check if player lost the game
+function hasLost(guessesLeft)
+{
+    if(guessesLeft === 0)
+    {
+        return true;
+    }
+    return false;
+}
+
+
+
 
 
 
