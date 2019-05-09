@@ -116,6 +116,26 @@ function hasLost(guessesLeft)
     return false;
 }
 
+//5)- Function to check if round if over
+function isEndOfRound(roundObj)
+{
+    
+   if (hasWon(roundObj.puzzleState) || roundObj.guessesLeft == 0)
+   {
+       return true;
+   }
+   return false;
+//    else if (hasWon(roundObj.puzzleState) && roundObj.guessesLeft !== 0) {
+//        return false;
+
+   
+
+
+
+}
+
+
+
 
 
 
