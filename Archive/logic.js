@@ -8,7 +8,6 @@ var gameWords = ["yosemite", "yellowstone", "acadia", "shenandoah", "halekala", 
 
 
 //Utility Functions:
-
 //function to pick random word from the gameWords Array
 function randomWord(gameWords)
 {
@@ -143,6 +142,29 @@ function isEndOfRound(roundObj)
 
 
  }
+ //7) - Function to start a new round
+
+ function startNewRound(gameObj)
+ {
+     //calling hasLost and hasWon functions to check if it returns true and use if statement
+    if( hasWon(gameObj.round.puzzleState))
+    {
+        gameObj.wins++;
+        alert("Congratulations!!  You won! " + gameObj.round.word);
+        
+    }
+     else
+     {
+        alert("Sorry :( please try again :)" + gameObj.round.word);
+        gameObj.losses++;
+
+     }
+    return gameObj;
+    
+    
+
+ }// still have to work a little more on this
+
 
 
 
