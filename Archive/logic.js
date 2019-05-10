@@ -4,7 +4,7 @@
 //Global Variables:
 //Array to store national parks names
 var gameWords = ["yosemite", "yellowstone", "acadia", "shenandoah", "halekala", "sequoia", "canyonlands"];
-
+var myGame = setupGame(gameWords, 0 , 0);
 
 
 //Utility Functions:
@@ -163,7 +163,7 @@ function isEndOfRound(roundObj)
     
     
 
- }// still have to work a little more on this
+ }//go to the tope of the page to see global variables
 
 
 
