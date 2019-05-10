@@ -16,10 +16,6 @@ function randomWord(gameWords)
 
 }
 
-
-
-
-
 //function to check if character in word 
 function isCorrectGuess (word, letter) 
 
@@ -27,8 +23,6 @@ function isCorrectGuess (word, letter)
        return word.includes(letter);
     }
    
-
-
 
 //function to create a blank array "_" equals to the length of the word
 function getBlanks(word)
@@ -73,7 +67,6 @@ for(var i = 0 ; i < word.length; i++)
 
   return roundObj;
  }
-
 
 
  //2)-Function to update round 
@@ -163,7 +156,7 @@ function isEndOfRound(roundObj)
     
     
 
- }//go to the tope of the page to see global variables
+ }
 
 
 
