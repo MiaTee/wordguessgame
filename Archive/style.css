@@ -1,0 +1,23 @@
+.card{
+
+    left:0;
+    right:0;
+    text-align: center;
+    font-family: 'Chewy', cursive;
+}
+h1{
+    font-family: 'Chewy', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+}
+#imageID{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-block-end-color: aquamarine;
+    border-block-end-style: groove;
+    border-block-end-width: 30px;
+  
+    
+}
+
