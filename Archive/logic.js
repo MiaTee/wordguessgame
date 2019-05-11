@@ -170,13 +170,23 @@ function isEndOfRound(roundObj)
 // }
 // Now we need to access element:
 var myGame = setupGame(gameWords, 0 , 0);
-console.log(myGame)
 
 var puzzleStateDiv = document.getElementById("puzzle-state");
-var x = myGame.round.puzzleState.toString()
-console.log(x);
+var wrongGuessesDiv = document.getElementById("wrong-guesses");
+var guessesLeftDiv = document.getElementById("guesses-left");
+var winCounterDiv = document.getElementById("win-counter");
+var lossCounterDiv = document.getElementById("loss-counter");
+
 
 puzzleStateDiv.innerHTML = myGame.round.puzzleState.join(" ");
+wrongGuessesDiv.innerHTML = myGame.round.wrongGuesses;
+guessesLeftDiv.innerHTML = myGame.round.guessesLeft;
+winCounterDiv.innerHTML = myGame.wins;
+lossCounterDiv.innerHTML = myGame.losses;
+
+
+
+
 
 
 
