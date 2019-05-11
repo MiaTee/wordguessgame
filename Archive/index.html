@@ -6,34 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src=logic.js></script>
     <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chewy|Fredericka+the+Great" rel="stylesheet">
     <title>Word Puzzle Game</title>
 </head>
-<body background=url"https://wallpapercave.com/wp/VcoxqiD.jpg" >
+<body>
       
     <h1> Welcome to Word Puzzle Game</h1>
 
-              <div>
-                      
+              <div>       
                 <img id="imageID" src="https://wallpapercave.com/wp/VcoxqiD.jpg" alt="image of a forest" width="800" height="800">
               </div>
 
               <div  class="card text-white bg-dark mb-3">
-                    <div class="card-header" id="puzzle-state"> - - - - - -</div>
+                    <div class="card-header" id="puzzle-state"></div>
                     <div class="card-body">
-                      <h5 class="card-title" id= "wrong-guesses" > Wrong Guesses :</h5>
-                      <h5 class="card-title" id="guesses-left">Win Counter :</h5>
-                      <h5 class="card-title" id="win-counter" >Loss Counter :</h5>
+                      <h5 class="card-title" id= "wrong-guesses" > Wrong Guesses : </h5>
+                      <h5 class="card-title" id="guesses-left">Guesses Left : 9</h5>
+                      <h5 class="card-title" id="win-counter" >Win Counter :</h5>
                       <h5 class="card-title" id="loss-counter">Loss Counter : </h5>
                     </div>
-                  </div>
- 
-            </div>
-          </div>
-
-
-
+              </div>    
+              <script src=logic.js></script>
 </body>
 </html>

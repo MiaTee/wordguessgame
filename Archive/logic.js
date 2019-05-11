@@ -4,7 +4,6 @@
 //Global Variables:
 //Array to store national parks names
 var gameWords = ["yosemite", "yellowstone", "acadia", "shenandoah", "halekala", "sequoia", "canyonlands"];
-var myGame = setupGame(gameWords, 0 , 0);
 
 
 //Utility Functions:
@@ -154,12 +153,30 @@ function isEndOfRound(roundObj)
      }
     return gameObj;
     
-    
+    // document.addEventListener("keydown", function(event) {
+    //     console.log(event.which);
+    //   }
 
  }
 
+ //keyboard events
 
+// window.addEventListener("keydown", checkKeyPress, false);
+// function checkKeyPress(key){
+//     if(key.keyCode == "65")
+//     {
+//         alert("The a letter has been pressed");
+//     }
+// }
+// Now we need to access element:
+var myGame = setupGame(gameWords, 0 , 0);
+console.log(myGame)
 
+var puzzleStateDiv = document.getElementById("puzzle-state");
+var x = myGame.round.puzzleState.toString()
+console.log(x);
+
+puzzleStateDiv.innerHTML = myGame.round.puzzleState.join(" ");
 
 
 
